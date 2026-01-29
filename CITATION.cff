@@ -1,0 +1,10 @@
+cff-version: 1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Nicolas"
+  given-names: "Bontemps"
+ 
+title: "CitaBEREL - detecting citations in rabbinic litterature"
+version: 1.0
+date-released: 2025-01-29
+url: "https://github.com/nicolasbontemps/CitaBEREL"
