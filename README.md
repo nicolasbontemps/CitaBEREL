@@ -1,22 +1,12 @@
 # CitaBEREL - Hebrew Biblical Citation Detection – Inference Script
-CitaBEREL is a finetuned BERT model for detecting Biblical quotations in Tannaitic Rabbinic Hebrew. This repository provides a command-line script to run **token-level inference**
+CitaBEREL is a finetuned BERT model for detecting Biblical quotations in Rabbinic Litterature. This repository provides a command-line script to run **token-level inference**
 
-**biblical citations in Hebrew texts**.
-
-The model operates at the **token level** and is applied to CSV files where
-each row corresponds to a word (or token) in the original text.
+The model is applied to CSV files where each row corresponds to a word (or token) in the original text.
 
 👉 **Model weights** are hosted on Hugging Face:  
 https://huggingface.co/nbontemps/CitaBEREL
 
 ---
-
-## Repository structure
-
-├─ README.md
-├─ requirements.txt
-└─ scripts/
-   └─ Cita_Berel_inference.py
 
 ## Installation
 
@@ -50,12 +40,12 @@ python scripts/Cita_Berel_inference.py \
   --input input.csv \
   --output output.csv \
   --model nbontemps/CitaBEREL \
+  --text-col column_name
 
 Optional arguments
 
 | Argument         | Description                                          |
 | ---------------- | ---------------------------------------------------- |
-| `--text-col`     | Text column name (default: `merge_norm2_and_abbrev`) |
 | `--tag-col`      | Gold tag column (default: `tag`)                     |
 | `--id-col`       | ID column (default: `id`)                            |
 | `--segment-size` | Number of words per inference segment (default: 50)  |
