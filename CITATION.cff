@@ -1,8 +1,8 @@
-cff-version: 1.0
+cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-- family-names: "Nicolas"
-  given-names: "Bontemps"
+- family-names: "Bontemps"
+  given-names: "Nicolas"
  
 title: "CitaBEREL - detecting citations in rabbinic litterature"
 version: 1.0
